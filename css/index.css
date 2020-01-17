@@ -31,23 +31,36 @@
       .web .sqr_lottery .box .row .sqr {
         width: 30%;
         height: 100%;
-        background-color: red;
+        background-color: #ffa2cd;
         position: relative;
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 24px; }
-      .web .sqr_lottery .box .row .active::before {
-        content: '';
-        display: block;
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
-        border: 5px solid royalblue; }
+        font-size: 24px;
+        color: white;
+        border-radius: 6%;
+        transition: 0.1s;
+        user-select: none; }
+      .web .sqr_lottery .box .row .active {
+        background-color: #ff0077; }
+        .web .sqr_lottery .box .row .active::before {
+          content: '';
+          display: block;
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          border-radius: 10%;
+          border: 5px solid #00928b; }
       .web .sqr_lottery .box .row .btn {
-        cursor: pointer; }
+        cursor: pointer;
+        background-color: #00928b;
+        color: white;
+        border-radius: 50%;
+        transition: 0.3s; }
+        .web .sqr_lottery .box .row .btn:hover {
+          background-color: #007092; }
 
 /*# sourceMappingURL=index.css.map */
